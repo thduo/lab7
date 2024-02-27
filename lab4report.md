@@ -22,6 +22,7 @@ For this step, I run the command `bash test.sh` to compile and run all the tests
 ![Image](fixthecode.png)
 
 For this step, I run command `vim ListExamples.java` to access the `ListExamples.java` file so that I can edit and fix the error. I use `j` key to move down the desired area which is `// Changing index1 to index 2`. Next, I type `x` to delete `1` and type `i` to insert new character which is `2` demonstrated in the image.
+
 **Summary of keys pressed: `<j>` `<j>` `<j>` `<j>` `<j>` `<x>` `<i>` `<2>` `<ESC>` `<:wq>` `<ENTER>`**
 
 # <u> Step 4: Rerun the test and demonstrate that they succeed
