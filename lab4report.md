@@ -3,11 +3,11 @@
 # Professor: Joe Gibss Politz
 
 # <u> Step 1 & 2: Log into ieng6 machine and git clone SSH link
-Initially, when I use `ssh-keygen` to access my ieng6 account and git clone from my SSH private link which is `git@github.com:thduo/lab7.git`, it could not read from remote repository due to my SSH link from private ieng6 account. Therefore, coming to the second step which is making the lab7 git accessible.
+Initially, when I use `ssh-keygen` to access my ieng6 account and `git clone` from my SSH private link which is `git@github.com:thduo/lab7.git`, it could not read from remote repository due to my SSH link from private ieng6 account. Therefore, coming to the second step which is making the lab7 git accessible.
 
 ![Image](sshkey.png)
 
-For this step, I will use SSH to git clone lab7 directory. In this image, I use command `cat id_rsa.pub` to know what's inside my public key and pasted that content to SSH Key in Github. After that, I use `git clone git@github.com:thduo/lab7.git` to git clone my forked lab7 directory into the terminal. To make sure I git clone in a correct way, I use command `ls` after `cd lab7` to know the files inside that directory. 
+For this step, I will use SSH to git clone `lab7` directory. In this image, I use command `cat id_rsa.pub` to know what's inside my public key and pasted that content to SSH Key in Github. After that, I use `git clone git@github.com:thduo/lab7.git` to git clone my forked `lab7` directory into the terminal. To make sure I git clone in a correct way, I use command `ls` after `cd lab7` to know the files inside that directory. 
 
 ![Image](ieng6login.png)
 
@@ -15,7 +15,7 @@ For this step, I will use SSH to git clone lab7 directory. In this image, I use 
 
 ![Image](testfail.png)
 
-For this step, I run the command `bash test.sh` to compile and run all the tests in lab7. In the image below, it said there was 1 failure which is `testMerge2(ListExamplesTests)`. 
+For this step, I run the command `bash test.sh` to compile and run all the tests in `lab7`. In the image below, it said there was 1 failure which is `testMerge2(ListExamplesTests)`. 
 
 # <u> Step 3: Edit the code and fix the error
 
@@ -29,15 +29,15 @@ For this step, I run command `vim ListExamples.java` to access the `ListExamples
 
 ![Image](testsucceed.png)
 
-For this step, after changing `index1` to `index2`, I rerun the test by command `bash test.sh`, showing that they now run successfully with the message "OK (2 tests)". 
+For this step, after changing `index1` to `index2`, I rerun the test by command `bash test.sh` or I can simply use `<^>` arrow key to navigate my command history so that I don't have to type it all out `bash test.sh`. It is now showing that they run successfully with the message "OK (2 tests)". 
 
 # <u> Step 5: Git push and commit changes
 
-For this step, I first add the `ListExamples.java` to the `lab7` directory by the command `git add ListExamples.java`. I want to make sure the changed file is add, I use the command `git status` to check if the file is already added or not. The message appear in the image below is that it is already modified with the `ListExamples.java`. Next, I will use the command `git commit -m "Commit to Lab4Report"` with the message "Commit to Lab4Report".  
+For this step, I first adds a change to file `ListExamples.java` in the working directory which is `lab7` by the command `git add ListExamples.java`. I want to make sure the changed file is add, I use the command `git status` to check if the change is already added to `ListExamples.java` file or not. The `git status` command now can help me to know what changes are pending and which command I should do next. The message appear in the image below is that it is already modified with the `ListExamples.java`. Next, I will use the command `git commit -m "Commit to Lab4Report"` with the message "Commit to Lab4Report". The command `git commit -m` serve a purpose of saving changes to the local repository with a message describing the commit. When including the `-m` option with a message in quotes, this command allows me to have a good summary of the changes made directly from the command line without opening a text editor. 
 
 ![Image](gitcommit.png)
 
-Next, I will double check the status of the git committed directory by `git status` showed in the image below.
+Next, I will double check the status of the file changes committed in `lab7` directory by `git status` showed in the image below.
 
 ![Image](gitstatus.png)
 
